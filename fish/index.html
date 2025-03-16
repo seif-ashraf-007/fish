@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الاسماك الطازجة</title>
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/css.css" />
+  </head>
+  <body>
+    <button class="free" id="arrowUP"><i class="bi bi-arrow-up"></i></button>
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container collect">
+          <div class="swap-nav d-flex">
+            <a class="navbar-brand" href=""
+              ><img class="img-fluid" src="img/logo.PNG" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#Home"
+                    >الرئسية</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Menu">الاسماك</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Services">نحن من</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Delivery">التواصل</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-icons">
+            <div id="popsearch" class="icon">
+              <a><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input type="search" placeholder="search" id="search" />
+            </div>
+            <div class="icon-cart">
+              <p class="edit">0</p>
+              <i class="bi bi-cart4"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- sidebar Section -->
+    <div class="cartTap">
+      <h1>عملية الشراء</h1>
+      <div class="listCart"></div>
+      <div class="btn1">
+        <div class="sidebar--footer">
+          <div class="total--amount">
+            <h5>المجموع</h5>
+            <div class="cart-total">د.ك0.00</div>
+          </div>
+        </div>
+        <button class="close">الخروج</button>
+      </div>
+    </div>
+    <main>
+      <section class="sec">
+        <div class="container">
+          <div class="product">
+            <h1>أسماك الوطنية</h1>
+            <p>
+              اكتشف منتجاتنا عالية الجودة من الأسماك الطازجة والمستوردة
+              والروبيان المميز، اطلب الآن مع أفضل وأسرع خدمة توصيل اونلاين.
+            </p>
+          </div>
+          <div class="row parts pt-4">
+            <a href="#" class="col-lg-3 col-sm-6 col-12">%</a>
+            <div class="dish col-lg-3 col-sm-6 col-12">
+              <img src="img/top1.png" alt="" />
+              <p>سيباس تركي</p>
+            </div>
+            <div class="dish col-lg-3 col-sm-6 col-12">
+              <img src="img/top2.png" alt="" />
+              <p>روبيان جامبو</p>
+            </div>
+            <div class="dish col-lg-3 col-sm-6 col-12">
+              <img src="img/top3.png" alt="" />
+              <p>سالمون نيجيري</p>
+            </div>
+          </div>
+          <ul class="links">
+            <li><a href="#">توصيل مجاني</a></li>
+            <li><a href="#">خلال 40 دقيقة</a></li>
+            <li><a href="#">نقل مخصص</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="sec1 pt-5">
+        <div class="container">
+          <div class="card">
+            <div class="pic1"></div>
+            <div class="card-body">
+              <h5 class="card-title">قائمة أسماك الوطنية</h5>
+              <div class="d-flex gap-2">
+                <span class="d-flex gap-2 align-items-center"
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  >4.7</span
+                >
+                <p class="card-text">
+                  الأسماك الطازجة والمستوردة والروبيان المميز
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-4 list">
+            <div
+              class="col-lg-2 col-sm-3 col-12 d-flex flex-column align-items-center pt-3"
+            >
+              <p>وقت التوصيل</p>
+              <h2>40 دقيقة</h2>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-12 bor pt-3">
+              <p>التقييم</p>
+              <h2>4.7</h2>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-12 bor pt-3">
+              <p>المسافة</p>
+              <h2>15 كيلو</h2>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-12 bor pt-3">
+              <p>ساعات العمل</p>
+              <h2 class="text-success bg-light rounded-5 px-3 pb-2">مفتوح</h2>
+            </div>
+            <div
+              class="col-lg-4 col-12 d-flex justify-content-center pt-3"
+              id="select"
+            >
+              <input
+                type="search"
+                placeholder="&#x1F50D;ابحث في منتج"
+                id="search1"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec2 pt-5 pb-5">
+        <div class="container swiper-container py-4">
+          <h4 class="p-3">عروض اليوم</h4>
+          <div class="mySwiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card cards">
+                  <div class="image">
+                    <img src="img/order1.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <div class="header">
+                      <h5 class="card-title">8.00 د.ك</h5>
+                    </div>
+                    <div class="text">
+                      <p class="card-text">
+                        كرتون روبيان 10 كيلو - فقط بـ 8 دينار!
+                      </p>
+                      <button type="button">إضافة</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cards">
+                  <div class="image">
+                    <img src="img/order2.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <div class="header">
+                      <h5 class="card-title">5.99 د.ك</h5>
+                    </div>
+                    <div class="text">
+                      <p class="card-text">عرض الروبيان – لذّة لا تُقاوم!</p>
+                      <button type="button">إضافة</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cards">
+                  <div class="image">
+                    <img src="img/order3.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <div class="header">
+                      <h5 class="card-title">2.5 د.ك</h5>
+                    </div>
+                    <div class="text">
+                      <p class="card-text">
+                        عرض الشعري – الطعم اليومي المثالي!
+                      </p>
+                      <button type="button">إضافة</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card cards">
+                  <div class="image">
+                    <img src="img/order4.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <div class="header">
+                      <h5 class="card-title">11.99 د.ك</h5>
+                    </div>
+                    <div class="text">
+                      <p class="card-text">عرض السبيطي – أفضل نكهات البحر!</p>
+                      <button type="button">إضافة</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cards">
+                  <div class="image">
+                    <img src="img/order5.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <div class="header">
+                      <h5 class="card-title">4.99 د.ك</h5>
+                    </div>
+                    <div class="text">
+                      <p class="card-text">هامور طازج – طاولتك تستحق الأفضل!</p>
+                      <button type="button">إضافة</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cards">
+                  <div class="image">
+                    <img src="img/order6.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <div class="header">
+                      <h5 class="card-title">5.00 د.ك</h5>
+                    </div>
+                    <div class="text">
+                      <p class="card-text">سلمون نرويجي – "طازج ومميز" !</p>
+                      <button type="button">إضافة</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="sec3">
+        <div class="container pt-4">
+          <div class="row"></div>
+          <ul class="d-flex justify-content-center gap-4 pt-3">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="shop" id="go">
+        <div id="total">
+          <span>0</span>
+          <h1>0 د.ك</h1>
+        </div>
+        <div class="go">
+          <h5>اذهب الى السلة</h5>
+          <i class="bi bi-arrow-left-short"></i>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popcontainer bottomCart">
+      <i class="bi bi-x-lg" id="exit"></i>
+      <div class="popItem">
+        <form action="" autocomplete="off">
+          <div class="userName">
+            <input type="text" required id="userName" autocomplete="off" />
+            <label for="userName" class="form">الاسم</label>
+            <p class="validName text-danger text-center">برجاء ادخال الاسم</p>
+          </div>
+          <div class="address">
+            <input type="text" required id="Address" autocomplete="off" />
+            <label for="Address" class="form">العنوان</label>
+            <p class="vaildAddress text-danger text-center">
+              برجاء ادخال العنوان الحالي
+            </p>
+          </div>
+
+          <div class="d-flex gap-2">
+            <div class="flat">
+              <input type="text" required id="flat" autocomplete="off" />
+              <label for="flat" class="form">الشقة/البناية السكنية</label>
+              <p class="vaildFlat text-danger text-center">برجاء ادخال الشقة</p>
+            </div>
+            <div class="phone">
+              <input
+                type="tel"
+                required
+                id="phone"
+                maxlength="12"
+                value="+965"
+                autocomplete="off"
+              />
+              <label for="phone" class="form">رقم الهاتف</label>
+              <p class="vaildPhone text-danger text-center">
+                برجاء ادخال الرقم
+              </p>
+            </div>
+          </div>
+          <div class="textArea">
+            <textarea
+              type="text"
+              required
+              id="driveNote"
+              maxlength="200"
+              autocomplete="off"
+              placeholder="ضع تعليمات توصيل للسائق"
+            ></textarea>
+            <p class="vaildArea text-danger text-center">
+              برجاء ادخال تفاصيل المكان لتوصيل
+            </p>
+          </div>
+
+          <div class="payment">
+            <h3>طريقة الدفع</h3>
+            <div class="cardit">
+              <div class="pic">
+                <img src="img/knet.png" alt="" />
+                <h6>بطاقة السحب الآلي</h6>
+              </div>
+              <a
+                href="../pay/index.html"
+                class="bi bi-arrow-left-short"
+                id="paymentLink"
+              ></a>
+            </div>
+            <div class="basket">
+              <h5>سلة أسماك الوطنية</h5>
+              <div class="pro">
+                <p>المنتجات<span>(0)</span></p>
+                <h3>0 د.ك</h3>
+              </div>
+              <div class="value">
+                <p>قيمة التوصيل</p>
+                <h3>0 د.ك</h3>
+              </div>
+            </div>
+          </div>
+          <div class="order pb-5">
+            <div class="payFull">
+              <input type="radio" id="payFull" name="payFull" />
+              <label for="payFull">
+                <h4>دفع قيمة الطلب كاملة</h4>
+                <p>
+                  سدد اجمالي قيمة الطلب الآن وادفع من خلال كي-نت واحصل على توصيل
+                  مجاني
+                </p>
+              </label>
+            </div>
+            <div class="payFull2">
+              <input type="radio" id="payFull2" name="payFull" />
+              <label for="payFull2">
+                <h4>دفع مبلغ 0.5 د.ك فقط لتأكيد طلبك</h4>
+                <p>
+                  يخصم من قيمة الطلب وادفع الباقي عند الاستلام مع دفع مصاريف
+                  توصيل بقيمة 1 د.ك
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="pay-container rounded-2">
+            <div class="pay">
+              <div class="d-flex gap-5 justify-content-sm-between">
+                <h1>المجموع الكلي</h1>
+                <h1>0 د.ك</h1>
+              </div>
+              <div class="d-flex justify-content-sm-center mt-4 text-white">
+                <button
+                  class="btn btn-primary follow d-flex gap-2"
+                  type="button"
+                >
+                  <p>متابعة الدفع</p>
+                  <span>(0 د.ك)</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="vendor/bootstrap.bundle.js"></script>
+  <script src="vendor/swiper-bundle.min.js"></script>
+  <script src="vendor/main.js"></script>
+</html>

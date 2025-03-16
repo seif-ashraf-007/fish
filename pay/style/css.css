@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Black;
+  src: url(../fonts/Cairo-Black.ttf);
+}
+@font-face {
+  font-family: Bold;
+  src: url(../fonts/Cairo-Bold.ttf);
+}
+@font-face {
+  font-family: ExtraBold;
+  src: url(../fonts/Cairo-ExtraBold.ttf);
+}
+@font-face {
+  font-family: ExtraLight;
+  src: url(../fonts/Cairo-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Medium;
+  src: url(../fonts/Cairo-Medium.ttf);
+}
+@font-face {
+  font-family: Regular;
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+@font-face {
+  font-family: SemiBold;
+  src: url(../fonts/Cairo-SemiBold.ttf);
+}
+::-webkit-scrollbar {
+  background-color: #eee;
+  width: 0.8rem;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #131613;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444;
+}
+html {
+  font-size: 14px;
+}
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.full-screen {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.sec .form-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #8f8f90;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px #0000004d;
+}
+label {
+  font-size: 0.8125rem;
+  color: #0070cd;
+  font-family: Bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Amount label:nth-child(2) {
+  color: #444;
+  font-size: 0.875rem;
+}
+.pay label:nth-child(2) {
+  color: #444;
+}
+
+.credit-card .option {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+}
+.option input {
+  width: 60%;
+}
+.option .column-value1 {
+  width: 50%;
+}
+.credit-card label {
+  width: 60%;
+}
+
+.Expire .column-value {
+  width: 58%;
+}
+.Expire label {
+  width: 50%;
+}
+.Expire .column-long {
+  width: 80%;
+}
+.Expire .option1 {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+.pin input {
+  width: 60%;
+}
+.btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+button {
+  width: 100%;
+  font-size: 1.1875rem;
+  font-family: Regular;
+}
+
+.rights {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.rights p:nth-child(2) {
+  font-weight: bold;
+  color: rgb(0, 119, 213);
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+
+  .full-screen {
+    width: 500px;
+  }
+  .rights p:nth-child(2) {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 119, 213);
+  }
+  .bank {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pay {
+    display: flex;
+    gap: 150px;
+  }
+  .Amount {
+    display: flex;
+    gap: 160px;
+  }
+  .credit-card {
+    display: flex;
+    gap: 25px;
+  }
+  .Expire {
+    display: flex;
+    gap: 25px;
+  }
+  .pin {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rights {
+    font-size: 1.125rem;
+  }
+}
+
+.customer-details {
+  padding: 15px 0;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.customer-info label:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.customer-info label:last-child {
+  text-align: right;
+}
+
+.cart-items {
+  margin-top: 15px;
+}
+
+.cart-items h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.cart-table tr:last-child td {
+  border-bottom: none;
+}
+
+.btns button:first-child:not([disabled]) {
+  background-color: #0070cd;
+  color: white;
+  cursor: pointer;
+}
+
+.btns button:first-child:not([disabled]):hover {
+  background-color: #005ba4;
+}
+
+/* Add visual feedback for form fields */
+input:focus,
+select:focus {
+  outline: 2px solid #0070cd;
+}
+
+/* Add visual feedback for invalid fields */
+input:invalid {
+  border: 1px solid #ff0000;
+}
